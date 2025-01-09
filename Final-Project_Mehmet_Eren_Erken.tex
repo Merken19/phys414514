@@ -13,4 +13,49 @@ Koç University}
 \section*{Newton}
 
 This part gives calculations of the structures of various types of stars in Newtonian gravity, general relativity (GR) and alternative theories of gravity which try to surpass GR.
+## 1. From the stellar structure equations to the Lane–Emden equation
+
+### 1.1. Stellar structure in Newtonian gravity
+
+We start with the standard Newtonian equations for hydrostatic equilibrium in a spherically symmetric star:
+
+1. **Mass continuity:**
+   \[
+   \frac{dm}{dr} \;=\; 4\pi\,r^{2}\,\rho(r),
+   \]
+2. **Hydrostatic equilibrium:**
+   \[
+   \frac{dp}{dr} \;=\; -\,\frac{G\,m(r)\,\rho(r)}{r^{2}}.
+   \]
+
+Here:
+- \(m(r)\) is the mass enclosed within radius \(r\),
+- \(\rho(r)\) is the mass density,
+- \(p(r)\) is the pressure,
+- \(G\) is the gravitational constant.
+
+
+### 1.2. Polytropic equation of state
+
+We then **close** the system using a polytropic equation of state
+
+\[
+p \;=\; K\,\rho^\gamma \;=\; K\,\rho^{1 + \tfrac{1}{n}},
+\]
+
+where
+- \(K\) is a constant (related to the microphysics of the stellar material),
+- \(n\) is called the polytropic index,
+- \(\gamma = 1 + \frac{1}{n}\).
+
+It is standard to rewrite
+\[
+\gamma \;=\; 1 \;+\;\frac{1}{n}
+\quad\Longrightarrow\quad
+p = K\,\rho^{\gamma}
+\quad\Longrightarrow\quad
+p = K\,\rho^{1 + \tfrac{1}{n}}.
+\]
+
+
 \end{document}

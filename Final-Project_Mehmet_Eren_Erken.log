@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  9 JAN 2025 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  9 JAN 2025 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,31 +56,80 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 11.
- [1
 
-{C:/Users/erene/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Final-Proje
-ct_Mehmet_Eren_Erken.aux)
+! You can't use `macro parameter character #' in horizontal mode.
+l.16 #
+      # 1. From the stellar structure equations to the Lane–Emden equation
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.16 ##
+        1. From the stellar structure equations to the Lane–Emden equation
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.18 #
+      ## 1.1. Stellar structure in Newtonian gravity
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.18 ##
+       # 1.1. Stellar structure in Newtonian gravity
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.18 ###
+         1.1. Stellar structure in Newtonian gravity
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 23.
+! You can't use `macro parameter character #' in vertical mode.
+l.38 #
+      ## 1.2. Polytropic equation of state
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.38 ##
+       # 1.2. Polytropic equation of state
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.38 ###
+         1.2. Polytropic equation of state
+? 
+! Undefined control sequence.
+l.43 ...; K\,\rho^\gamma \;=\; K\,\rho^{1 + \tfrac
+                                                  {1}{n}},
+? 
+! Undefined control sequence.
+l.57 p = K\,\rho^{1 + \tfrac
+                            {1}{n}}.
+? 
+[1
+
+{C:/Users/erene/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(Final-Project_Mehmet_Eren_Erken.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 490 strings out of 474486
- 9980 string characters out of 5743756
- 1926542 words of memory out of 5000000
- 22844 multiletter control sequences out of 15000+600000
+ 492 strings out of 474486
+ 10008 string characters out of 5743756
+ 1930542 words of memory out of 5000000
+ 22846 multiletter control sequences out of 15000+600000
  561709 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,7n,50p,238b,206s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Final-Project_Mehmet_Eren_Erken.pdf (1 page, 53151 bytes).
+fonts/cm/cmmi10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/erene/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/erene/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/erene/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/erene/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Final-Project_Mehmet_Eren_Erken.pdf (1 page, 96635 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
