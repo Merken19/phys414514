@@ -6,6 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb}
 \usepackage{titlesec}
+\usepackage{graphicx} 
 
 % Change section numbering to letters
 \renewcommand{\thesection}{\Alph{section}}
@@ -291,4 +292,46 @@ where the dimensionless constant \(C(n)\) is:
 C(n) = 4\pi \left(4\pi\right)^n \frac{\xi_n^{1-n} \left(-\theta'(\xi_n)\right)}{(n+1)^n}.
 \]
 
+\section{White Dwarf Data Fitting}
+
+\subsection{Converting \(\log g\) to Radius}
+
+The surface gravity of a star \(g\) (in CGS units) is related to its mass \(M\) and radius \(R\) through Newtonian gravity:
+\[
+g = \frac{G M}{R^2},
+\]
+where \(G\) is the gravitational constant. For white dwarfs, \(g\) is typically given as \(\log g\) (base-10 logarithm in CGS units), and the mass \(M\) is expressed in solar masses \((M_\odot)\). To compute the radius \(R\) in Earth radii \((R_\oplus)\), we follow these steps:
+
+1. Compute \(g\) in \(\mathrm{cm/s^2}\) using:
+   \[
+   g = 10^{\log g}.
+   \]
+
+2. Convert \(M\) from solar masses to grams:
+   \[
+   M_{\mathrm{grams}} = \left(\frac{M}{M_\odot}\right) \times 1.989 \times 10^{33}.
+   \]
+
+3. Solve for \(R\) in \(\mathrm{cm}\):
+   \[
+   R = \sqrt{\frac{G M_{\mathrm{grams}}}{g}}.
+   \]
+
+4. Convert \(R\) to Earth radii:
+   \[
+   R_{R_\oplus} = \frac{R}{6.371 \times 10^8}.
+   \]
+
+\subsection{Figure: Plot of White Dwarf Data}
+
+Below, the plotted results of the White Dwarf data can be seen. The plotting is done on \href{Newton.ipynb}{Newton.ipynb part B}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Newton_PartB_WhiteDwarfDataFitting.pdf}
+    \caption{Visualization of the white dwarf data.}
+    \label{fig:newtonian-visualization}
+\end{figure}
+
+   
 \end{document}

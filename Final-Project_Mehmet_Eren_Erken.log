@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  9 JAN 2025 19:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  9 JAN 2025 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,7 +290,28 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen156
 \titlewidthlast=\dimen157
 \titlewidthfirst=\dimen158
-) (C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+) (C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
@@ -301,37 +322,62 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Final-Project_Mehmet_Eren_Erken.aux)
 \openout1 = `Final-Project_Mehmet_Eren_Erken.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-Package hyperref Info: Link coloring OFF on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (Final-Project_Mehmet_Eren_Erken.out) (Final-Project_Mehmet_Eren_Erken.out)
 \@outlinefile=\write3
 \openout3 = `Final-Project_Mehmet_Eren_Erken.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count286
+\scratchdimen=\dimen161
+\scratchbox=\box55
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen162
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks33
+)
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
-(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+
+ (C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (C:\Users\erene\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -342,63 +388,91 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/erene/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
 ]
-Overfull \hbox (24.44016pt too wide) in paragraph at lines 83--84
+Overfull \hbox (24.44016pt too wide) in paragraph at lines 84--85
 \OT1/cmr/m/n/12 To sim-plify the equa-tions, we in-tro-duce di-men-sion-less va
 ri-ables (e.g., Lane{Emden
  []
 
 [3]
-Overfull \hbox (12.921pt too wide) in paragraph at lines 126--127
+Overfull \hbox (12.921pt too wide) in paragraph at lines 127--128
 []\OT1/cmr/m/n/12 Plugging this into the Lane{Emden equa-tion yields the co-ef-
 fi-cients $\OML/cmm/m/it/12 a[]; a[]; []$\OT1/cmr/m/n/12 .
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 135.
 
 [4] [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 220.
+(hyperref)                removing `math shift' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rho' on input line 220.
+(hyperref)                removing `\rho' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 220.
+(hyperref)                removing `subscript' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 234.
+(hyperref)                removing `math shift' on input line 235.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 234.
+(hyperref)                removing `math shift' on input line 235.
 
-[7] [8] [9] (Final-Project_Mehmet_Eren_Erken.aux)
+[7] [8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 297.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\log' on input line 297.
+
+[9]
+<Newton_PartB_WhiteDwarfDataFitting.pdf, id=126, 570.8659pt x 281.94835pt>
+File: Newton_PartB_WhiteDwarfDataFitting.pdf Graphic file (type pdf)
+<use Newton_PartB_WhiteDwarfDataFitting.pdf>
+Package pdftex.def Info: Newton_PartB_WhiteDwarfDataFitting.pdf  used on input 
+line 331.
+(pdftex.def)             Requested size: 312.00119pt x 154.09976pt.
+ [10] [11 <./Newton_PartB_WhiteDwarfDataFitting.pdf>]
+(Final-Project_Mehmet_Eren_Erken.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `Final-Project_Mehmet_Eren_Erken.out' has not
- changed.
-(rerunfilecheck)             Checksum: 9394CA9ABC7B8D209BB27CB6EC1162B7;3000.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Final-Project_Mehmet_Eren_Erken.out' has 
+changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Final-Project_Mehmet_Eren_Erken.out
+':
+(rerunfilecheck)             Before: 53245B6C68D0A32956C6211EB7CEFB79;3637
+(rerunfilecheck)             After:  CBA08060816711BF5D681432C3FF1378;3583.
  ) 
 Here is how much of TeX's memory you used:
- 9373 strings out of 474486
- 144178 string characters out of 5743756
+ 10207 strings out of 474486
+ 157144 string characters out of 5743756
  1931542 words of memory out of 5000000
- 31528 multiletter control sequences out of 15000+600000
+ 32327 multiletter control sequences out of 15000+600000
  572085 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,570b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,570b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\erene\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -414,9 +488,10 @@ b><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy6.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb>
-Output written on Final-Project_Mehmet_Eren_Erken.pdf (9 pages, 169556 bytes).
+Output written on Final-Project_Mehmet_Eren_Erken.pdf (11 pages, 197175 bytes).
+
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
