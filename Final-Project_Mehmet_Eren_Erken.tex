@@ -1,5 +1,9 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
 
 \title{Computational Physics (PHYS514) Final Project}
 \author{Mehmet Eren Erken \\
@@ -12,20 +16,21 @@ Koç University}
 
 \section*{Newton}
 
-This part gives calculations of the structures of various types of stars in Newtonian gravity, general relativity (GR) and alternative theories of gravity which try to surpass GR.
-## 1. From the stellar structure equations to the Lane–Emden equation
+This part gives calculations of the structures of various types of stars in Newtonian gravity, general relativity (GR), and alternative theories of gravity which try to surpass GR.
 
-### 1.1. Stellar structure in Newtonian gravity
+\section{From the stellar structure equations to the Lane–Emden equation}
+
+\subsection{Stellar structure in Newtonian gravity}
 
 We start with the standard Newtonian equations for hydrostatic equilibrium in a spherically symmetric star:
 
 1. **Mass continuity:**
    \[
-   \frac{dm}{dr} \;=\; 4\pi\,r^{2}\,\rho(r),
+   \frac{dm}{dr} = 4\pi r^2 \rho(r),
    \]
 2. **Hydrostatic equilibrium:**
    \[
-   \frac{dp}{dr} \;=\; -\,\frac{G\,m(r)\,\rho(r)}{r^{2}}.
+   \frac{dp}{dr} = -\frac{G m(r) \rho(r)}{r^2}.
    \]
 
 Here:
@@ -34,13 +39,12 @@ Here:
 - \(p(r)\) is the pressure,
 - \(G\) is the gravitational constant.
 
+\subsection{Polytropic equation of state}
 
-### 1.2. Polytropic equation of state
-
-We then **close** the system using a polytropic equation of state
+We then close the system using a polytropic equation of state:
 
 \[
-p \;=\; K\,\rho^\gamma \;=\; K\,\rho^{1 + \tfrac{1}{n}},
+p = K \rho^\gamma = K \rho^{1 + \tfrac{1}{n}},
 \]
 
 where
@@ -48,14 +52,50 @@ where
 - \(n\) is called the polytropic index,
 - \(\gamma = 1 + \frac{1}{n}\).
 
-It is standard to rewrite
+\subsection{Dimensionless variables}
+
+To transform these ODEs into the Lane–Emden equation, one introduces dimensionless variables that factor out the central values. Let
 \[
-\gamma \;=\; 1 \;+\;\frac{1}{n}
-\quad\Longrightarrow\quad
-p = K\,\rho^{\gamma}
-\quad\Longrightarrow\quad
-p = K\,\rho^{1 + \tfrac{1}{n}}.
+\rho(r) = \rho_c \theta^n(\xi),
 \]
+where \(\rho_c = \rho(0)\) is the central density, and define
+\[
+r = a \xi,
+\]
+for some length scale \(a\) that will be determined shortly. The quantity \(\theta(\xi)\) is a dimensionless function satisfying \(\theta(0) = 1\).  
+
+From the polytropic EOS, the central pressure is
+\[
+p_c = K \rho_c^\gamma.
+\]
+A convenient choice for \(a\) is
+\[
+a^2 = \frac{(n+1) K \rho_c^{\tfrac{1}{n}}}{4\pi G}.
+\]
+
+Substituting \(\rho(r) = \rho_c \theta^n(\xi)\) into the equations and using the chosen \(a\), one arrives at a single, dimensionless ODE for \(\theta(\xi)\).
+
+\subsection{The Lane–Emden equation}
+
+The final result of this procedure is the Lane–Emden equation of index \(n\):
+\[
+\boxed{
+\frac{1}{\xi^2} \frac{d}{d\xi} \left( \xi^2 \frac{d\theta}{d\xi} \right) + \theta^n = 0.
+}
+\]
+
+The corresponding boundary conditions at the center (\(\xi=0\)) are:
+1. \(\theta(0) = 1\), since \(\rho(0) = \rho_c\),
+2. \(\theta'(0) = 0\), for regularity at the origin.
+
+Hence, we have everything that defines the Lane–Emden problem:
+\[
+\begin{cases}
+\frac{1}{\xi^2} \frac{d}{d\xi} \left( \xi^2 \frac{d\theta}{d\xi} \right) + \theta^n = 0, \\[6pt]
+\theta(0) = 1, \quad \theta'(0) = 0.
+\end{cases}
+\]
+
 
 
 \end{document}
