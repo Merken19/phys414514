@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  10 JAN 2025 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  10 JAN 2025 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,7 +450,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\log' on input line 299.
 
 [9]
-<Newton_PartB_WhiteDwarfDataFitting.pdf, id=154, 570.8659pt x 571.02838pt>
+<Newton_PartB_WhiteDwarfDataFitting.pdf, id=158, 570.8659pt x 571.02838pt>
 File: Newton_PartB_WhiteDwarfDataFitting.pdf Graphic file (type pdf)
 <use Newton_PartB_WhiteDwarfDataFitting.pdf>
 Package pdftex.def Info: Newton_PartB_WhiteDwarfDataFitting.pdf  used on input 
@@ -811,25 +811,61 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 420.
 
 [13]
-<Newton_PartC2.pdf, id=219, 568.11809pt x 567.51274pt>
+<Newton_PartC2.pdf, id=223, 568.11809pt x 567.51274pt>
 File: Newton_PartC2.pdf Graphic file (type pdf)
 <use Newton_PartC2.pdf>
 Package pdftex.def Info: Newton_PartC2.pdf  used on input line 473.
 (pdftex.def)             Requested size: 312.00119pt x 311.67401pt.
- [14] [15 <./Newton_PartC2.pdf>] [16] (Final-Project_Mehmet_Eren_Erken.aux)
+ [14] [15 <./Newton_PartC2.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rho' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 493.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 493.
+
+<Newton_PartC2.2.pdf, id=287, 715.16121pt x 424.14346pt>
+File: Newton_PartC2.2.pdf Graphic file (type pdf)
+<use Newton_PartC2.2.pdf>
+Package pdftex.def Info: Newton_PartC2.2.pdf  used on input line 499.
+(pdftex.def)             Requested size: 312.00119pt x 185.03807pt.
+<Newton_PartC2.3.pdf, id=288, 715.16814pt x 413.18253pt>
+File: Newton_PartC2.3.pdf Graphic file (type pdf)
+<use Newton_PartC2.3.pdf>
+Package pdftex.def Info: Newton_PartC2.3.pdf  used on input line 506.
+(pdftex.def)             Requested size: 312.00119pt x 180.25623pt.
+[16 <./Newton_PartC2.2.pdf>] [17 <./Newton_PartC2.3.pdf>]
+(Final-Project_Mehmet_Eren_Erken.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `Final-Project_Mehmet_Eren_Erken.out' has not
- changed.
-(rerunfilecheck)             Checksum: EF20BF480A78FEE256EB8CAA87B29B6C;5074.
+
+
+Package rerunfilecheck Warning: File `Final-Project_Mehmet_Eren_Erken.out' has 
+changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Final-Project_Mehmet_Eren_Erken.out
+':
+(rerunfilecheck)             Before: 6B7DCFCBE338A8C1F7243F1243360337;5325
+(rerunfilecheck)             After:  51690CADDCEE0A184F5F79C30611211C;5374.
  ) 
 Here is how much of TeX's memory you used:
- 10385 strings out of 474486
- 160207 string characters out of 5743756
+ 10407 strings out of 474486
+ 160721 string characters out of 5743756
  1934542 words of memory out of 5000000
- 32477 multiletter control sequences out of 15000+600000
+ 32494 multiletter control sequences out of 15000+600000
  573814 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,570b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -841,24 +877,25 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 00.pk><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmex10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/erene/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/erene/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/erene/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/eren
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
-ers/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
-><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/erene/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Final-Project_Mehmet_Eren_Erken.pdf (16 pages, 276775 bytes).
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/erene/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/erene/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/erene/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ere
+ne/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
+sers/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.p
+fb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr6.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/erene/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/erene/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Final-Project_Mehmet_Eren_Erken.pdf (17 pages, 333681 bytes).
 
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
