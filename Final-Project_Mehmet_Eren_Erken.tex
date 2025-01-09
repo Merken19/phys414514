@@ -2,6 +2,7 @@
 
 \usepackage{amsthm}
 \usepackage{hyperref}
+\usepackage{marginnote}
 \usepackage{bm}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb}
@@ -333,5 +334,127 @@ Below, the plotted results of the White Dwarf data can be seen. The plotting is 
     \label{fig:newtonian-visualization}
 \end{figure}
 
-   
+\section{Low-\(x\) Expansion and the Polytropic Limit}
+
+We have the EOS for cold WDs (in CGS units for pressure):
+\[
+\boxed{
+P(\rho)
+~\,=\,~
+C\,\Bigl[x\,(2x^{2}-3)\,\sqrt{1 + x^{2}} \;+\; 3\,\sinh^{-1}(x)\Bigr],
+\quad
+x \;=\;\Bigl(\tfrac{\rho}{D}\Bigr)^{\!\!1/q}.
+}
+\]
+We want the leading term for **small** \(x\). This corresponds to **low-mass** WDs where the density \(\rho\) is still well below the scale set by \(D\).
+
+\subsection{Series Expansion for Small \(x\)}
+
+Let’s expand, term by term, for \(x \to 0\).
+
+\subsubsection{1. Inside the Bracket \(\bigl[\ldots\bigr]\):}
+
+\[
+\begin{aligned}
+x\,(2\,x^2 - 3)\,\sqrt{1 + x^2}
+&=~
+x\,\bigl(-3 + 2\,x^2\bigr)
+\Bigl[\,1 + \tfrac{x^2}{2} - \tfrac{x^4}{8} + \dots\Bigr] 
+\\[4pt]
+&=
+x\,\Bigl[-3 + 2x^2 + \dots\Bigr]
+\Bigl[\,1 + \tfrac{x^2}{2} + \dots\Bigr]
+=
+-3\,x + 0.5\,x^3 + 1.375\,x^5 + \dots
+\\[-2pt]
+&\quad(\text{we keep up to }x^5\text{ terms}).
+\end{aligned}
+\]
+
+\subsubsection{2. The Term \(3\,\sinh^{-1}(x)\):}
+
+Recall for small \(x\),
+\[
+\sinh^{-1}(x) = x - x^3/6 + (3/40)\,x^5 + \dots.
+\]
+Multiplying by 3 yields
+\[
+3\,\sinh^{-1}(x)
+~\approx~
+3\,x \;-\;\tfrac{1}{2}\,x^3 \;+\; 0.225\,x^5 + \dots
+\]
+
+\subsubsection{3. Summation:}
+
+\[
+\bigl[x\,(2x^2-3)\,\sqrt{1+x^2}\bigr] 
+\;+\; 3\,\sinh^{-1}(x)
+~=~
+\underbrace{(-3x + 3x)}_{0}
+\;+\;\underbrace{(0.5\,x^3 - 0.5\,x^3)}_{0}
+\;+\;\underbrace{(1.375 + 0.225)\,x^5}_{1.6\,x^5}
+\;+\;\dots
+\]
+Hence, the first \textbf{nonzero} term is:
+\[
+= \frac{8}{5}\,x^5 \;+\;\mathcal{O}(x^7).\footnote{This derivation is also done by symbolic calculations through \texttt{sympy} in \href{Newton.ipynb}{Newton.ipynb part C.1} through series expansion.}
+\]
+
+Therefore,
+\[
+P(\rho)
+~\approx~
+C\;\frac{8}{5}\,x^5
+\quad\text{for }x\to0.
+\]
+
+
+\subsubsection{4. Rewrite \(x = \bigl(\tfrac{\rho}{D}\bigr)^{1/q}\):}
+
+\[
+P(\rho)
+~\approx~
+\frac{8C}{5}\,\Bigl(\frac{\rho}{D}\Bigr)^{\!\!\tfrac{5}{q}}
+~=~
+\underbrace{\Bigl[\frac{8C}{5}\,\frac{1}{D^{5/q}}\Bigr]}_{K_{\star}}\,
+\rho^{\,\tfrac{5}{q}}.
+\]
+Hence the polytropic index in the exponent:
+\[
+P ~\propto~ \rho^{5/q}.
+\]
+Compare to a standard polytrope,
+\[
+P ~\propto~ \rho^{1 + \tfrac{1}{n_{\star}}}
+\quad\Longrightarrow\quad
+1 + \frac{1}{n_{\star}} ~=~ \frac{5}{\,q\,}.
+\]
+Solve for \(n_{\star}\):
+\[
+\frac{1}{n_{\star}} = \frac{5}{q} - 1 
+= \frac{5 - q}{\,q\,}
+~\Longrightarrow~
+n_{\star} = \frac{q}{\,5 - q\,}.
+\]
+And the overall coefficient:
+\[
+K_{\star} 
+~=~
+\frac{8\,C}{\,5\,}\;\frac{1}{D^{5/q}}.
+\]
+Thus:
+\[
+\boxed{
+n_{\star} 
+~=~ \frac{q}{\,5 - q\,},
+\quad
+K_{\star}
+~=~
+\frac{8\,C}{\,5\,}\;D^{-\tfrac{5}{q}}.
+}
+\]
+
+These final relations are exactly what we wanted to show.
+
+
 \end{document}
