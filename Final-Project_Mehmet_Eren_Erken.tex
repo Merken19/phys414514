@@ -1,12 +1,30 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\documentclass[12pt]{article}
+
 \usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{bm}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{titlesec}
 
-\title{Computational Physics (PHYS514) Final Project}
+% Change section numbering to letters
+\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% Styling sections and subsections
+\titleformat{\section}{\Large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection.}{1em}{}
+
+% Adjust spacing
+\usepackage{setspace}
+\setstretch{1.5}
+
+
+
+\title{Computational Physics (PHYS414/514) \\
+Final Project}
 \author{Mehmet Eren Erken \\
 Koç University}
 \date{}
@@ -15,11 +33,13 @@ Koç University}
 
 \maketitle
 
+\clearpage % Ensures the content after this starts on a new page
+
 \section*{Newton}
 
 This part gives calculations of the structures of various types of stars in Newtonian gravity, general relativity (GR), and alternative theories of gravity which try to surpass GR.
 
-\section{From the Stellar Structure Equations to the Lane–Emden Equation}
+\section{Lane–Emden Equation}
 
 \subsection{Stellar Structure in Newtonian Gravity}
 
@@ -103,12 +123,172 @@ We verify the regularity condition near \(\xi=0\) by performing a power-series e
 = 1 + a_2 \xi^2 + a_4 \xi^4 + \dots
 \]
 
-Plugging this into the Lane–Emden equation yields the coefficients \(a_2, a_4, \dots\). A calculation from \href{Newton.ipynb}{Newton.ipynb part A} gives:
+Plugging this into the Lane–Emden equation yields the coefficients \(a_2, a_4, \dots\). A calculation from \href{Newton.ipynb}{Newton.ipynb part A.1} gives:
 \[
 \theta(\xi)
 = 1 - \frac{1}{6}\xi^2 + \frac{n}{120}\xi^4 - \cdots,
 \]
 
 confirming \(\theta'(0) = 0\).
+
+\subsubsection{Solving the Lane–Emden equation for \(n=1\)}
+
+When \(n = 1\), the Lane–Emden equation becomes
+\[
+\frac{1}{\xi^2}
+\frac{d}{d\xi}
+\left(
+\xi^2 \frac{d\theta}{d\xi}
+\right)
++ \theta = 0,
+\]
+with \(\theta(0)=1\) and \(\theta'(0)=0\).
+
+This ODE can be solved analytically. For \(n=1\), the solution is:
+\[
+\theta(\xi) = \frac{\sin \xi}{\xi}.
+\]
+
+Indeed, one checks that
+\[
+\theta(0) = \lim_{\xi \to 0} \frac{\sin \xi}{\xi} = 1,
+\quad
+\theta'(0) = 0,
+\]
+and it satisfies the differential equation upon direct substitution. The solution can also be solved using sympy, which is demonstrated in \href{Newton.ipynb}{Newton.ipynb part A.2}.
+
+\subsection{Defining the stellar surface and total mass}
+
+\subsubsection{Surface of the polytrope}
+
+Because \(\rho(r) \propto \theta^n(\xi)\), the surface of the star is (by definition) at the first positive \(\xi = \xi_n\) such that 
+\[
+\theta(\xi_n) = 0.
+\]
+Then the physical radius of the star is 
+\[
+R = a \xi_n.
+\]
+
+For \(n=1\), from \(\sin(\xi_n)/\xi_n = 0\), the first positive root is \(\xi_n = \pi\). For other integer \(n\), one must solve numerically or use known special-function expansions.
+
+\subsubsection{Total Mass of the Star}
+
+To find the total mass of the star, we start with the dimensionless form of the mass-continuity equation:
+\[
+\frac{dm}{d\xi} = \xi^2 \theta^n.
+\]
+
+The total mass \(M\) of the star is the mass enclosed at the surface, which corresponds to \(\xi = \xi_n\), where \(\xi_n\) is the dimensionless radius at which \(\theta(\xi_n) = 0\). Integrating from the center (\(\xi = 0\)) to the surface (\(\xi = \xi_n\)):
+\[
+M = 4\pi \rho_c a^3 \int_0^{\xi_n} \xi^2 \theta^n \, d\xi.
+\]
+
+Using integration by parts to simplify the integral, we start by rewriting the integrand:
+\[
+\int_0^{\xi_n} \xi^2 \theta^n \, d\xi = \left[ -\xi^2 \theta' \right]_0^{\xi_n} + \int_0^{\xi_n} 2\xi \theta' \, d\xi.
+\]
+
+From the Lane–Emden equation:
+\[
+\frac{1}{\xi^2} \frac{d}{d\xi} \left( \xi^2 \frac{d\theta}{d\xi} \right) + \theta^n = 0,
+\]
+we know:
+\[
+\xi^2 \theta^n = -\frac{d}{d\xi} \left( \xi^2 \frac{d\theta}{d\xi} \right).
+\]
+
+This implies that the integral of \(\xi^2 \theta^n\) simplifies directly using the surface boundary conditions:
+\[
+\int_0^{\xi_n} \xi^2 \theta^n \, d\xi = -\left[\xi^2 \frac{d\theta}{d\xi}\right]_0^{\xi_n}.
+\]
+
+At the center, \(\xi = 0\), the regularity condition ensures that \(\xi^2 \theta' \to 0\). Therefore:
+\[
+M = 4\pi \rho_c a^3 \left[ -\xi_n^2 \theta'(\xi_n) \right].
+\]
+
+Rewriting \(a = R / \xi_n\), where \(R\) is the physical radius of the star, we obtain:
+\[
+M = 4\pi \rho_c R^3 \left[ -\frac{\theta'(\xi_n)}{\xi_n} \right].
+\]
+
+\subsection{Mass–radius relation for polytropes}
+
+Finally, if one fixes the same polytropic index \(n\) (i.e., all stars in the family have the same value of \(n\)) but allows different central densities \(\rho_c\), then the scaling of \(a\) with \(\rho_c\) implies a specific power-law relation between \(M\) and \(R\).
+
+\subsubsection{How \(a\) depends on \(\rho_c\)}
+
+Recall
+\[
+a^2 
+= \frac{(n+1)K\rho_c^{1/n}}{4\pi G}
+\quad\Longrightarrow\quad
+a \propto \rho_c^{1/(2n)}.
+\]
+Hence
+\[
+R = a \xi_n \propto \rho_c^{1/(2n)}.
+\]
+
+\subsubsection{How \(M\) Depends on \(R\)}
+
+Substituting this into the expression for \(M\):
+\[
+M \propto \rho_c \cdot R^3 \propto R^{-2n} \cdot R^3.
+\]
+
+Simplifying gives:
+\[
+M \propto R^{3 - 2n}.
+\]
+
+Using the polytropic equation of state \(p \propto \rho^{1 + 1/n}\) leads to:
+\[
+M \propto R^{\frac{3 - n}{1 - n}}.
+\]
+
+
+\subsubsection{Finding the Constant of Proportionality}
+
+To determine the constant of proportionality, we start by expressing the central density \(\rho_c\) in terms of other variables. Recall the expression for the Lane–Emden scaling factor \(a\):
+\[
+a^2 = \frac{(n+1)K\rho_c^{1/n}}{4\pi G}.
+\]
+
+Solving for \(\rho_c\):
+\[
+\rho_c = \left(\frac{4\pi G}{(n+1)K}\right)^n a^{-2n}.
+\]
+
+Substituting \(a = R / \xi_n\), we express \(\rho_c\) as:
+\[
+\rho_c = \left(\frac{4\pi G}{(n+1)K}\right)^n \left(\frac{R}{\xi_n}\right)^{-2n}.
+\]
+
+Now, substitute this expression for \(\rho_c\) into the total mass formula:
+\[
+M = 4\pi \rho_c R^3 \left(-\frac{\theta'(\xi_n)}{\xi_n}\right).
+\]
+
+Expanding \(\rho_c\) explicitly:
+\[
+M = 4\pi \left(\frac{4\pi G}{(n+1)K}\right)^n \left(\frac{R}{\xi_n}\right)^{-2n} R^3 \left(-\frac{\theta'(\xi_n)}{\xi_n}\right).
+\]
+
+Simplify the powers of \(R\) to consolidate the mass-radius relation:
+\[
+M = \left(-4\pi \right) \left(\frac{4\pi G}{(n+1)K}\right)^n \xi_n^{1-n} \left(-\theta'(\xi_n)\right) R^{3-n}.
+\]
+
+Factor out the terms that depend only on \(n\), \(K\), and \(G\):
+\[
+M = C(n) K^{n/(n-1)} G^{-n/(n-1)} R^{\frac{3-n}{1-n}},
+\]
+
+where the dimensionless constant \(C(n)\) is:
+\[
+C(n) = 4\pi \left(4\pi\right)^n \frac{\xi_n^{1-n} \left(-\theta'(\xi_n)\right)}{(n+1)^n}.
+\]
 
 \end{document}
