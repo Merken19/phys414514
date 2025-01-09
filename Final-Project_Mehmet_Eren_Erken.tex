@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 
+\usepackage{float} 
 \usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{marginnote}
@@ -331,12 +332,12 @@ Below, the plotted results of the White Dwarf data can be seen. The plotting is 
     \centering
     \includegraphics[width=0.8\textwidth]{Newton_PartB_WhiteDwarfDataFitting.pdf}
     \caption{Visualization of the white dwarf data.}
-    \label{fig:newtonian-visualization}
+    \label{fig:newton-partb}
 \end{figure}
 
 \clearpage % Ensures the content after this starts on a new page
 
-\section{Low-\(x\) Expansion and the Polytropic Limit}
+\section{Polytropic Fit for White Dwarfs}
 
 We have the EOS for cold WDs (in CGS units for pressure):
 \[
@@ -462,6 +463,50 @@ K_{\star}
 \]
 
 These final relations are exactly what we wanted to show.
+
+\subsection{Figure: Line Fitting to White Dwarf Data}
+
+Below, the fitted line to the White Dwarf data can be seen. The plotting is done in \href{Newton.ipynb}{Newton.ipynb, part C.2}.
+
+\begin{figure}[H] % Use [H] to force the figure to stay in place
+    \centering
+    \includegraphics[width=0.8\textwidth]{Newton_PartC2.pdf}
+    \caption{Fitting a line through the White Dwarf data.}
+    \label{fig:newton-partc2}
+\end{figure}
+
+The results of the fitting process are as follows. The inferred polytropic index is \( n_\star = 1.5521 \). The effective scaling constant is given by
+\[
+c = 10^{\text{intercept}} = 3.6434 \times 10^{21} \, \mathrm{cm \, g^{-1/2}}.
+\]
+The effective constant \( K_\star \) was calculated using the scaling relation:
+\[
+K_\star = \frac{4 \pi G c^2}{(n_\star + 1)^2 \xi_1^2},
+\]
+where \( \xi_1 \) is the first zero of the Lane-Emden equation for \( n_\star = 1.55 \) (\( \xi_1 \approx 3.65 \)).
+
+Finally, the calculated value of \( K_\star \) is:
+\[
+K_\star = 1.285 \times 10^{35} \, \mathrm{erg \, cm^{3(1-n_\star)} \, g^{-n_\star}}.
+\]
+
+\subsection{Figure: Central Density $\\rho_c$ vs Mass $M$}
+
+Below, the Central Density $\\rho_c$ vs Mass $M$ plot of the White Dwarf data can be seen. The plotting is done in \href{Newton.ipynb}{Newton.ipynb, part C.2.2 and C.2.3}.
+
+\begin{figure}[H] % Use [H] to force the figure to stay in place
+    \centering
+    \includegraphics[width=0.8\textwidth]{Newton_PartC2.2.pdf}
+    \caption{Plotting all data to emphasize on low mass turnpoint.}
+    \label{fig:newton-partc2.2}
+\end{figure}
+
+\begin{figure}[H] % Use [H] to force the figure to stay in place
+    \centering
+    \includegraphics[width=0.8\textwidth]{Newton_PartC2.3.pdf}
+    \caption{Plotting low-mass White dwarf data.}
+    \label{fig:newton-partc2.3}
+\end{figure}
 
 
 \end{document}
