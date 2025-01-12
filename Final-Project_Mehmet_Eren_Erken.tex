@@ -508,6 +508,84 @@ The relationship between Central Density \(\rho_c\) and Mass \(M\) for White Dwa
     \label{fig:newton-partc2.3}
 \end{figure}
 
-\section{D}
+\clearpage
+
+\section{Finding best fits of \(C\) and \(D\)}
+
+\subsection{We Already Know \(q\)}
+
+Previously, we assumed \(q \approx 3\). Substituting into the EOS for Cold WDs, we have:
+\[
+\boxed{
+P(\rho)
+\;=\;
+C
+\left[
+  x\,\bigl(2x^2 - 3\bigr)\sqrt{x^2 + 1}
+  \;+\; 3\,\sinh^{-1}(x)
+\right],
+\quad
+x = \Bigl(\tfrac{\rho}{D}\Bigr)^{1/q}.
+}
+\]
+
+Once \(D\) is chosen, we compute:
+\[
+C \;=\;\frac{5}{8}\;K_\star\;\bigl[D^{5/q}\bigr]
+\quad\Longrightarrow\quad
+\text{(thus, \(P(\rho)\) is fully specified).}
+\]
+
+\subsection{Hydrostatic Equilibrium IVP}
+
+We solve the usual ODEs (in CGS units):
+\[
+\begin{cases}
+\dfrac{dP}{dr} = -\,\rho(r)\,\dfrac{G\,m(r)}{r^2},\\[6pt]
+\dfrac{dm}{dr} = 4\pi\,r^2\,\rho(r),
+\end{cases}
+\]
+starting from \(r=0\) with
+\[
+\rho(0) = \rho_c,\quad
+m(0) = 0.
+\]
+
+We integrate outward until \(\rho \approx 0\) (the star’s surface). At each step:
+\[
+P(r) = P(\rho(r)) \;=\; \text{(EOS for Cold WDs)},
+\]
+and invert \(P \leftrightarrow \rho\) numerically. Since we have an explicit expression for \(P(\rho)\), we can invert \(\rho(P)\) either using a small root-finding method inside the ODE solver or through a direct formula if the equation is rearranged appropriately. Alternatively, \(\rho\) can be kept as the integration variable, and \(d\rho/dr\) can be derived from \(dP/d\rho\).
+
+\subsection{Getting \((R, M)\)}
+
+Once \(\rho\) becomes negligible, we record:
+\[
+R_{\star}(\rho_c),\quad M_{\star}(\rho_c).
+\]
+
+By scanning over different \(\rho_c\) values, we produce discrete points:
+\[
+\bigl\{(R_i, M_i)\bigr\}_{i=1}^{10}.
+\]
+This process is performed \textbf{once} for a single choice of \(D\).
+
+\subsubsection{Final Result}
+
+The actual values of \(C\) and \(D\), calculated theoretically, are as follows:
+\[
+C = \frac{m^4 e^5}{24\pi^2 \hbar^3} = 6.002332185660436 \times 10^{21},
+\]
+\[
+D = \frac{\mu m^3 e^3 \mu_e}{3\pi^2 \hbar^3} = 1.947864333345182 \times 10^{9}.
+\]
+
+Through computations from \href{Newton.ipynb}{Newton.ipynb, part D}, best-fitted values are as follows:
+\[
+\hat{D} = 3.3333 \times 10^{-6},
+\]
+\[
+\hat{C} = 1.6938 \times 10^{12}.
+\]
 
 \end{document}
