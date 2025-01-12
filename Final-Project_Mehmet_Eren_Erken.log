@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  12 JAN 2025 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.9)  13 JAN 2025 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,7 +450,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\log' on input line 299.
 
 [9]
-<Newton_PartB_WhiteDwarfDataFitting.pdf, id=178, 570.8659pt x 571.02838pt>
+<Newton_PartB_WhiteDwarfDataFitting.pdf, id=198, 570.8659pt x 571.02838pt>
 File: Newton_PartB_WhiteDwarfDataFitting.pdf Graphic file (type pdf)
 <use Newton_PartB_WhiteDwarfDataFitting.pdf>
 Package pdftex.def Info: Newton_PartB_WhiteDwarfDataFitting.pdf  used on input 
@@ -811,7 +811,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 420.
 
 [13]
-<Newton_PartC2.pdf, id=243, 568.11809pt x 567.51274pt>
+<Newton_PartC2.pdf, id=263, 568.11809pt x 567.51274pt>
 File: Newton_PartC2.pdf Graphic file (type pdf)
 <use Newton_PartC2.pdf>
 Package pdftex.def Info: Newton_PartC2.pdf  used on input line 473.
@@ -833,12 +833,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 493.
 
-<Newton_PartC2.2.pdf, id=307, 715.16121pt x 424.14346pt>
+<Newton_PartC2.2.pdf, id=327, 715.16121pt x 424.14346pt>
 File: Newton_PartC2.2.pdf Graphic file (type pdf)
 <use Newton_PartC2.2.pdf>
 Package pdftex.def Info: Newton_PartC2.2.pdf  used on input line 499.
 (pdftex.def)             Requested size: 312.00119pt x 185.03807pt.
-<Newton_PartC2.3.pdf, id=308, 715.16814pt x 413.18253pt>
+<Newton_PartC2.3.pdf, id=328, 715.16814pt x 413.18253pt>
 File: Newton_PartC2.3.pdf Graphic file (type pdf)
 <use Newton_PartC2.3.pdf>
 Package pdftex.def Info: Newton_PartC2.3.pdf  used on input line 506.
@@ -863,21 +863,45 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 560.
 
-[19] [20] (Final-Project_Mehmet_Eren_Erken.aux)
+[19] [20]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 593.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 593.
+
+
+Overfull \hbox (2.93904pt too wide) detected at line 610
+\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z\OT1/cmr/m/n/12 )  =  \O
+ML/cmm/m/it/12 C[]x \OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@
+ \OT1/cmr/m/n/12 3) []  +  3  [][](\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[]\OML/cm
+m/m/it/12 ;  x  \OT1/cmr/m/n/12 =  [][][][]\OML/cmm/m/it/12 ;  []q \OT1/cmr/m/n
+/12 = 3\OML/cmm/m/it/12 :
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 637.
+
+[21
+
+] [22] [23] (Final-Project_Mehmet_Eren_Erken.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Final-Project_Mehmet_Eren_Erken.out' has not
  changed.
-(rerunfilecheck)             Checksum: 7D856504B3FB216643AC0BB616D1E9A4;6241.
+(rerunfilecheck)             Checksum: D69C665DF19AD09222FFE896B07FE34A;7279.
  ) 
 Here is how much of TeX's memory you used:
- 10426 strings out of 474486
- 161003 string characters out of 5743756
+ 10443 strings out of 474486
+ 161219 string characters out of 5743756
  1934542 words of memory out of 5000000
- 32506 multiletter control sequences out of 15000+600000
- 575674 words of font info for 101 fonts, out of 8000000 for 9000
+ 32514 multiletter control sequences out of 15000+600000
+ 576021 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,570b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -902,12 +926,14 @@ ic/amsfonts/cm/cmr8.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/erene/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/erene/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/erene/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/erene/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Final-Project_Mehmet_Eren_Erken.pdf (20 pages, 347286 bytes).
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/erene/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/er
+ene/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on Final-Project_Mehmet_Eren_Erken.pdf (23 pages, 368490 bytes).
 
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 565 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
